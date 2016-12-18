@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < atoz.length(); j++) {
                 final long id = mData.size();
-                final int viewType = j % 3;
+                final int viewType = 0;
                 final String text = Character.toString(atoz.charAt(j));
                 final int swipeReaction = RecyclerViewSwipeManager.REACTION_CAN_SWIPE_UP | RecyclerViewSwipeManager.REACTION_CAN_SWIPE_DOWN;
                 mData.add(new ConcreteData(id, viewType, text, swipeReaction));
